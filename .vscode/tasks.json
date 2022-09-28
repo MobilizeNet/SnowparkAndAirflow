@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Spark Job",
+        "type": "shell",
+        "command": "bash /home/BlackDiamond/workspace/build_spark_job.sh",
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "Build SnowPark Job",
+        "type": "shell",
+        "command": "bash /home/BlackDiamond/workspace/build_snowpark_job.sh",
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      }
+    ]
+  }
